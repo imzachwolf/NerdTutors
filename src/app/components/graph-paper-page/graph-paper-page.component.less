@@ -1,0 +1,45 @@
+@import "../../shared/app-colors";
+
+.graph-paper-page-main{
+  background-image: url("../../../assets/SquareBackgroundPattern.png");
+  background-size: 2000px;
+  background-attachment: fixed;
+  -webkit-filter: brightness(115%) !important;
+  color: red;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+
+
+  height: 100%;
+  margin-bottom: 20px;
+
+}
+
+.binder-ring{
+  width:  3.3rem;
+  height: 6rem;
+
+  position: relative;
+  right: 5.18rem;
+
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -0.2rem;
+
+  @media only screen and  (max-width : 600px) {
+      display: none;
+  }
+}
+
+
+.main-logo{
+  position: relative;
+  height:200px;
+  background-color: white;
+  //border-color: #aaf5ff;
+  border-color: @primary;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 100%;
+}
