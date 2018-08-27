@@ -1,9 +1,21 @@
 
-<div class="header-bar-container row">
-  <div class="col-md-2">
+<div class=" header-bar-container row justify-content-start">
+  <div class="col-md-1 main-logo-container" >
     <img src="../../../assets/Nerd%20Tutors%20Logo.png" class="main-logo main-logo-header">
   </div>
-  <div class="col-md-10">
+  <div class="col-md-11">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div                 class="col-md-1"></div>
+        <app-header-bar-item class="col-md-2 header-bar-item p-2" [itemName]="'Home'"></app-header-bar-item>
+        <app-header-bar-item class="col-md-2 header-bar-item p-2" [itemName]="'Tutoring Services'"></app-header-bar-item>
+        <app-header-bar-item class="col-md-2 header-bar-item p-2" [itemName]="'Blog'"></app-header-bar-item>
+        <app-header-bar-item class="col-md-2 header-bar-item p-2" [itemName]="'Contact Us'"></app-header-bar-item>
+        <app-header-bar-item class="col-md-2 header-bar-item p-2" [itemName]="'Join the Team!'"></app-header-bar-item>
+
+
+      </div>
+    </div>
 
   </div>
   <div class="col-md-2"></div>
