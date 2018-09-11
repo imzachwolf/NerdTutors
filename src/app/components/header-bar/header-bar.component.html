@@ -7,13 +7,21 @@
     <div class="container">
       <div class="row justify-content-around">
         <div                 class="col-md-1"></div>
-        <app-header-bar-item class="col-md-2 header-bar-item p-2" [itemName]="'Home'"></app-header-bar-item>
-        <app-header-bar-item class="col-md-2 header-bar-item p-2" [itemName]="'Tutoring Services'"></app-header-bar-item>
-        <app-header-bar-item class="col-md-2 header-bar-item p-2" [itemName]="'Blog'"></app-header-bar-item>
-        <app-header-bar-item class="col-md-2 header-bar-item p-2" [itemName]="'Contact Us'"></app-header-bar-item>
-        <app-header-bar-item class="col-md-2 header-bar-item p-2" [itemName]="'Join the Team!'"></app-header-bar-item>
-
-
+        <a class="col-md-2 row" routerLink="/home" routerLinkActive="active" >
+          <header-bar-item class="col-md-12 header-bar-item p-2" [itemName]="'Home'"></header-bar-item>
+        </a>
+        <a class="col-md-2 row" routerLink="/tutoring-services" routerLinkActive="active" >
+          <header-bar-item class="col-md-12 header-bar-item p-2" [itemName]="'Tutoring Services'"></header-bar-item>
+        </a>
+        <a class="col-md-2 row" routerLink="/blog" routerLinkActive="active" >
+          <header-bar-item class="col-md-12 header-bar-item p-2" [itemName]="'Blog'"></header-bar-item>
+        </a>
+        <a class="col-md-2 row" routerLink="/contact-us" routerLinkActive="active" >
+          <header-bar-item class="col-md-12 header-bar-item p-2" [itemName]="'Contact Us'"></header-bar-item>
+        </a>
+        <a class="col-md-2 row" routerLink="/join-the-team" routerLinkActive="active" >
+          <header-bar-item class="col-md-12 header-bar-item p-2" [itemName]="'Join The Team!'"></header-bar-item>
+        </a>
       </div>
     </div>
 
