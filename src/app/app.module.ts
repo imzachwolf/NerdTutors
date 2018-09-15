@@ -13,7 +13,9 @@ import { BlogComponent } from './components/pages/blog/blog.component';
 import { ContactUsComponent } from './components/pages/contact-us/contact-us.component';
 import { JoinTheTeamComponent } from './components/pages/join-the-team/join-the-team.component';
 import { IntakeFormComponent } from './components/form-components/intake-form/intake-form.component';
+import { PaperModalComponent } from './components/modal-components/paper-modal/paper-modal.component';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -36,14 +38,17 @@ const appRoutes: Routes = [
     BlogComponent,
     ContactUsComponent,
     JoinTheTeamComponent,
-    IntakeFormComponent
+    IntakeFormComponent,
+    PaperModalComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, {enableTracing: true}),
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
+  ,  entryComponents: [PaperModalComponent]
 })
 export class AppModule { }

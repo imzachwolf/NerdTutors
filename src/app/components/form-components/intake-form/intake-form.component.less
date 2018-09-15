@@ -1,0 +1,85 @@
+@import "../../../shared/app-colors";
+@import "../../../../assets/fonts/Moonshot-Regular/styles.css";
+@import "../../../shared/utility";
+.intake-form-item{
+  position: relative;
+  width: 91%;
+  left: 54%;
+  transform: translateX(-50%);
+  text-align: center;
+  top: 40px;
+
+  font-family: Moonshot-Regular;
+
+  input.form-control{
+    margin-right: 0px;
+    position: relative;
+    right: 14px;
+
+    width: 80% !important;
+  }
+}
+
+
+.intake-form-button{
+  background-color: @secondary;
+  height: 100px;
+  width: 300px;
+  font-size: 55px;
+  border-radius: 16px;
+  position: relative;
+  top: 70px;
+  text-align: center;
+  font-family: Moonshot-Regular;
+
+  &:hover{
+    background-color: @primary;
+  }
+
+
+}
+.form-section{
+
+  //background-color: red;
+//
+}
+
+.testclassthing{
+
+}
+
+intake-form-button:active{
+  background-color: @primary !important;
+}
+
+intake-form-button:focus{
+  background-color: @primary !important;
+}
+
+.intake-form{
+  //background-color: @primary;
+  padding: 20px;
+}
+.intake-form-big-container{
+
+}
+
+.intake-form-sticky-note{
+  background-image: url("../../../../assets/stationary/note-blurb.png");
+  position: relative;
+  //display: flex;
+  @widthSize : 500px;
+  @heightSize:  350px;
+  background-size: @widthSize @heightSize;
+  background-repeat: no-repeat;
+  width: @widthSize;
+  height: @heightSize;
+
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 10px;
+}
+.form-section{
+  text-align: center;
+}

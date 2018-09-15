@@ -8,3 +8,11 @@
   vertical-align: baseline;
   background: transparent;
 }
+
+
+.modal-content {
+  position: relative;
+  top: -30px;
+  height: 0px;
+
+}
