@@ -1,6 +1,73 @@
 @import "../../../shared/app-colors";
 @import "../../../../assets/fonts/Moonshot-Regular/styles.css";
 @import "../../../shared/utility";
+
+.contact-us-action{
+  background-color: @secondary;
+  width: 270px;
+  border: @primary solid 5px;
+  border-radius: 16px;
+  position: relative;
+  left: 20px;
+  margin-top: 15px;
+
+  &:hover{
+    background-color: @primary;
+    border-color: @tieriary;
+  }
+
+}
+.price-header{
+  border-bottom: black solid 3px;
+  width: 300px;
+
+  margin-bottom: 20px;
+  position: relative;
+
+  right: 0px;
+}
+
+.price-options{
+  position: relative;
+  left: 15px;
+}
+
+
+.price{
+  background-color: @tieriary;
+  margin: 5px;
+  font-size: 80%;
+  width: 270px;
+  border-radius: 20px;
+  border-color: @primary;
+  border-style: solid;
+  border-width: 5px;
+
+  &:hover{
+    border-color: @secondary;
+  }
+
+}
+.form-cta{
+  overflow: hidden;
+  white-space: nowrap;
+  background-image: url("../../../../assets/stationary/sticky-note-loose.png");
+  background-size: 350px;
+  filter: brightness(110%);
+  transform: rotate(-10deg);
+  background-repeat: no-repeat;
+  font-family: Moonshot-Regular;
+  position: relative;
+  //top: 50px;
+  left: 20px;
+  line-height: 45px;
+}
+
+.price-options{
+  font-family: Moonshot-Regular;
+
+}
+
 .intake-form-item{
   position: relative;
   width: 91%;
