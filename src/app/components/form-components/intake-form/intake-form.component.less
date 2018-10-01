@@ -2,6 +2,9 @@
 @import "../../../../assets/fonts/Moonshot-Regular/styles.css";
 @import "../../../shared/utility";
 
+@desktop:   ~"only screen and (min-width: 960px) and (max-width: 1199px)";
+@tablet:    ~"only screen and (min-width: 720px) and (max-width: 959px)";
+@small-screen:   ~"only screen and  (max-width: 770px)";
 .contact-us-action{
   background-color: @secondary;
   width: 270px;
@@ -36,7 +39,7 @@
 .price{
   background-color: @tieriary;
   margin: 5px;
-  font-size: 80%;
+  font-size: 19px;
   width: 270px;
   border-radius: 20px;
   border-color: @primary;
@@ -57,6 +60,7 @@
   transform: rotate(-10deg);
   background-repeat: no-repeat;
   font-family: Moonshot-Regular;
+  font-size: 29px;
   position: relative;
   //top: 50px;
   left: 20px;
@@ -69,21 +73,25 @@
 }
 
 .intake-form-item{
-  position: relative;
-  width: 91%;
-  left: 54%;
-  transform: translateX(-50%);
   text-align: center;
+  position: relative;
+  left: 43px;
   top: 40px;
+  overflow: hidden;
+  white-space: nowrap;
 
   font-family: Moonshot-Regular;
 
   input.form-control{
     margin-right: 0px;
     position: relative;
-    right: 14px;
+    //right: 14px;
+    max-width: 250px;
+  }
 
-    width: 80% !important;
+
+  @media @small-screen{
+
   }
 }
 
@@ -106,7 +114,9 @@
 
 }
 .form-section{
-
+  font-size: 27px;
+  overflow: hidden;
+  white-space: nowrap;
   //background-color: red;
 //
 }
@@ -135,7 +145,7 @@ intake-form-button:focus{
   background-image: url("../../../../assets/stationary/note-blurb.png");
   position: relative;
   //display: flex;
-  @widthSize : 500px;
+  @widthSize : 550px;
   @heightSize:  350px;
   background-size: @widthSize @heightSize;
   background-repeat: no-repeat;
@@ -146,6 +156,16 @@ intake-form-button:focus{
   transform: translateX(-50%);
   text-align: center;
   padding: 10px;
+
+  @media @small-screen{
+    height: 450px;
+    background-size: @widthSize 450px;
+
+    input{
+      position: relative;
+      .hc();
+    }
+  }
 }
 .form-section{
   text-align: center;

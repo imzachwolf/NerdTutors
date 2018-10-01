@@ -1,0 +1,96 @@
+@import '../../shared/app-colors';
+@import "../../shared/utility";
+
+@nav-logo-width: 100px;
+@nav-logo-height: calc(90.6% * @nav-logo-width ) ;
+@navWidth: 0;
+
+
+.cta-header{
+  background-color: @accent;
+  position: relative;
+  font-family: Moonshot-Regular;
+  font-size:20px;
+  margin-bottom: 5px;
+}
+
+.navbar-collapse{
+  height: 110px;
+  position: relative;
+
+
+}
+
+//.navbar{
+//  margin-bottom: 60px;
+//  position: relative;
+//  top: -10px;
+//}
+
+
+
+
+.main-logo{
+  position: relative;
+  height: 120px;
+
+  background-color: white;
+  //border-color: #aaf5ff;
+  border-color: @primary;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 100%;
+  padding: 0;
+}
+
+.nav-logo{
+  width: @nav-logo-width;
+  height: @nav-logo-height;
+}
+.navbar-nav{
+  @navWidth: 100%;
+}
+
+.nav-item{
+  color: blue;
+  font-size: 30px;
+  width: 100%; // calc(20% * @navWidth);
+}
+
+.navbar-light{
+  background-color: fade(@primary, 90%) !important;
+  border-top: @secondary solid 5px; ;
+  border-bottom: @secondary solid 5px;
+
+
+}
+
+.navbar-toggler{
+  background-color: @tieriary ;
+  border-radius: 15px;
+  .hc();
+
+}
+
+.nav-item{
+  top: 0;
+  bottom: 0;
+
+
+  a{
+    height: 100%;
+    font-family: Moonshot-Regular;
+    color: @tieriary;
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+
+
+  }
+
+}
+
+.text-nav-item{
+  position: relative;
+  top:25%;
+}

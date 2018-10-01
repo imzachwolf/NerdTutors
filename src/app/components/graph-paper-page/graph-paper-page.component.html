@@ -1,16 +1,19 @@
-<div class="graph-paper-page-main container">
-  <div *ngFor="let ringTopOffset of binderRingHeights" >
-      <img src="../../../assets/binderRing.png" class="binder-ring" [ngStyle]="ringTopOffset">
-  </div>
-  <div class="row">
-    <div class="col-md-1"></div>
-    <app-header-bar class="col-md-11"></app-header-bar>
-  </div>
+
+  <!--<div *ngFor="let ringTopOffset of binderRingHeights" >-->
+      <!--<img src="../../../assets/binderRing.png" class="binder-ring" [ngStyle]="ringTopOffset">-->
+  <!--</div>-->
+  <!--<div class="jumbotron">-->
+    <!--<h1 class="display-4 bg-primary ">Hello, world!</h1>-->
+    <!--<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or informations.</p>-->
+
+  <!--</div>-->
+  <!--<carousel></carousel>-->
+  <navigation-bar></navigation-bar>
   <router-outlet></router-outlet>
 
 
 
   <p>{{pageHeight}}</p>
   <img class="pencil" src="../../../assets/stationary/pencil.png" />
-</div>
+
 

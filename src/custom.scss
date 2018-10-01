@@ -1,0 +1,23 @@
+@primary: #5EBFE6;
+@secondary: #A7DC3D;
+@tieriary: white;
+
+$primaryColor: #5ebfe6 !default;
+$secondaryColor: #a7dc3d !default;
+$tertiaryColor: #fff !default;
+
+
+
+$theme-colors: (
+  "primary": $primaryColor,
+  "secondary": $secondaryColor,
+  "light": $tertiaryColor
+) !default;
+
+.sticky-top{
+  top: -50px !important;
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+

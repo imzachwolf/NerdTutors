@@ -16,6 +16,8 @@ import { IntakeFormComponent } from './components/form-components/intake-form/in
 import { PaperModalComponent } from './components/modal-components/paper-modal/paper-modal.component';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -39,7 +41,9 @@ const appRoutes: Routes = [
     ContactUsComponent,
     JoinTheTeamComponent,
     IntakeFormComponent,
-    PaperModalComponent
+    PaperModalComponent,
+    NavigationBarComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
